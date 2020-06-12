@@ -27,4 +27,20 @@ public class IntToEngTest {
 		String actual = ie.translateEng(10);
 		assertThat(actual, is(expected));
 	}
+
+	@Test
+	public void translateEng21ToEng() {
+		IntToEng ie = new IntToEng();
+		String expected = "twentyone";
+		String actual = ie.translateEng(21);
+		assertThat(actual, is(expected));
+	}
+
+	@Test
+	public void translateEng234ToEng() {
+		IntToEng ie = new IntToEng();
+		String expected = "twohundredthirtyfour";
+		String actual = ie.translateEng(234);
+		assertThat(actual, is(expected));
+	}
 }
